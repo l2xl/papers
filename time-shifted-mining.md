@@ -1,4 +1,4 @@
-# Time-Shifted Mining
+# Time Shift Proof-of-Work Beyond a Functional Spec
 
 Disclaimer: This write-up creation is caused by private discussion of several people. Authorship of this idea belongs to a wider group of people then just the committer of this paper.
 
