@@ -55,9 +55,11 @@ $d$ - current block difficulty.
 
 $D$ - some base block difficulty (calculated as usual).
 
-$T$ - maximum allowed mining time shift. If a miner does not create a new block template during T blocks back from the current blockchain height then it loses his right to make it.
+$T$ - the mining time shift. After $T$ blocks a miner gets his right to make new block template.
 
-$N$ - a "normal" size of the block creators pool. May be equal to the size of the time-shift mining window if the mining scheme allows it. 
+$W$ - the amount of blocks when a block creator can use hit right to create a new block template.
+
+$N$ - a "normal" size of the block creators pool. May be equal to the size of the time-shift mining window $W$ if the mining scheme allows it. 
 
 $S_i$ - the distance in blocks between an exact available block template and the current blockchain height.
 
