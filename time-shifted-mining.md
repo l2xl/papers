@@ -60,5 +60,5 @@ This will either:
 
 
 
-[^1]: Implement Jack's idea of creating more than one block is not as easy as it seems- to be invented.
+[^1]: Implementing Jack's idea of creating more than one block is not as easy as it seems - to be invented.
 [^2]: We are worried that since the time window and the public key of the block creator are known, it can potentially be used for an equivalent of a grinding attack.  To be analyzed further.
