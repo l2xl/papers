@@ -1,73 +1,63 @@
 # Time Shift Proof-of-Work Beyond a Functional Spec
 
-Disclaimer: This write-up creation is caused by a private discussion between several people. Authorship of this idea belongs to a wider group of people than just the committers of this paper.
+Disclaimer: This write-up was created due to a private discussion between several people. Authorship of this idea belongs to a broader group of people than just the committers here. Original idea by Jack Liao.
 
 ## Intro
 
-The well-known Proof-of-Work (PoW) block-chain consensus mechanism is volnurable to a number of well-known attacks. One of the most known is the 51% attack.
+The well-known Proof-of-Work (PoW) blockchain consensus mechanism is vulnerable to several well-known attacks. One of the most known is the 51% attack.
 While this does not mainly affect the largest blockchain projects like Bitcoin, it is not true for minor blockchain projects or just boot-strapping blockchains.
-Described here additional mechanisms to classical PoW should allow increasing resistance to the most well-known attacks on blockchain consensus.
+Additional mechanisms to classical PoW should allow increasing resistance to the most well-known attacks on blockchain consensus.
 
 ## Common
 
-The main idea of time-shifted mining is to split in person and in time two functions that happen at once with classical PoW: block creation and block solution mining.
-
-If we achieve the target of independence of these two functions then a miner loses the ability to rewrite a blockchain sequence even in case it successfully controls 51% of the network.
+In bitcoin proof of work, two operations - 1) creating a new block and 2) finding a solution to a block, are closely tied together.  The main idea of Time Shift Proof-of-Work (TSPOW) is to separate them in time.  As a result, rewriting the history of the blockchain sequence becomes even harder than in the Nakamoto consensus.
 
 ## Spec
 
 ### Time Shift
 
-According to consensus rules, miners who compete to create block solution hash cannot create block themselves:
-instead, they need to communicate with a pool of block creators to obtain a signed block template.
-The block solution winner adds to the blockchain a new block based on the received block template.
-He authorizes his right to create a new block template later by adding a public key to the mined block.
-Anyone, who is able to create a signature that is validated by the public key from one of the blocks mined not earlier/later than consensus approved timeshift (T),
-is a valid candidate to create a new block template. Such miners form the block creators' pool.
-At the time of winning a solution for the new block, a miner does not receive any reward.
-To receive the mining reward the miner has to use the right to create a new block template with a coinbase transaction after a consensus-controlled time shift.
+According to the TSPOW consensus rules, miners who compete to find a block solution hash do not create block candidates.  Instead, they communicate with a pool of block creators and obtain signed block templates from the block creators.  Miners solve these blocks, constructed based on the received block template. When the winner adds a new block to the blockchain,  he adds his public key to the mined block, which serves as proof of his right to become a new block template creator.  He will be allowed to create a new block template, which will be signed by a signature validated by the public key from the block he mined.  Block template creation is limited by a time window between T and T+W blocks from the block he mined.   T and W are controlled by the consensus.  While in a time period between  T and T+W, the miner is considered a member of the pool of block creators.  A newly created block template contains the mining reward: a coinbase transaction spendable by the block template creator.  Thus, the mining reward is also delayed and separated from the process of finding a hash. 
+At the time of winning a solution for the new block, a miner does not receive any reward. 
 
-According to the scheme above, a block of transactions, in addition to the usual data, should contain the next new fields:
+A block should contain the following new metadata:
 
-* A public key of a current block solution winner to authorize his right of creation of a new block after a mining time shift.
-* A signature of the block template verifiable by the public key of the block mined before the time of the mining time shift.
-* A block variable part needed for a miner to look over for the block solution.
-* Blocks may also contain some additional fields needed to optimize mining time-shift rules such as reference (as block height of as block id) from one block, which contains a signature, to another, which contains a miner public key.
+* A public key of a miner who solved it.
+* A signature of the block template creator, verifiable by the public key from an earlier block.
+* A variable part for a miner to look for the block solution. (MS: isn't that what the payload is for?)
+* Blocks may also contain additional fields needed for optimization, like a reference to the block that contains the miner's public key.
 
-Note: public key/signature used for block template creation authorization may be replaced by a hash/preimage pair which is much more performance efficient.
+Note: a public key/signature used for block template creation authorization may be replaced by a hash/preimage pair which is much more performance efficient.
 
-Such mining scheme benefits compared to common PoW because it makes classical types of attack on PoW consensus much more expensive.
+TSPOW makes many types of attacks on the Nakamoto PoW consensus more expensive.
 
 ![TSPOW](ideal-tspow.drawio.png)
 
 ### Mining Difficulty Adjustment
 
-The time-shifter PoW scheme as described above is not balanced enough.
-Imagine if some miners who win a block solution will not come with a new block template at the time when expected.
-This may happen on a regular basis.
-The same effect may happen in case if miners will ignore block templates from some miners and favor the block templates from others.
+What а miner who won a block solution will not provide a new block template at the time when expected? 
+The same effect may happen if miners favor some block templates and ignore others.
 
-To eliminate an economical intention to prefer out-of-order block templates time-shifted PoW blockchain needs additional rules which adjust current block mining difficulty:
+TSPoW can protect itself from such imbalance if it assumes an additional rule to adjust the current block mining difficulty:
 
 $d = D \cdot \frac {\sum S_i} {(T+N/2) \cdot N}$, where
 
 $d$ - current block difficulty.
 
-$D$ - some base block difficulty (calculated as usual).
+$D$ - some base block difficulty (calculated as usual[MS:Meaning?]).
 
-$T$ - the mining time shift. After $T$ blocks a miner gets his right to make new block template.
+$T_1$ - the mining time shift. After $T_1$ blocks a miner gets his right to make a new block template.
 
-$W$ - the amount of blocks when a block creator can use hit right to create a new block template.
+$W$ - the number of blocks when a block creator can use hit right to create a new block template.
 
-$N$ - a "normal" size of the block creators pool. May be equal to the size of the time-shift mining window $W$ if the mining scheme allows it. 
+$N$ - a "normal" size of the block creators pool. It may be equal to the size of the time-shift mining window $W$ if the mining scheme allows it. 
 
-$S_i$ - the distance in blocks between an exact available block template and the current blockchain height.
+$S_i$ - the distance in blocks between an available block template and the current blockchain height. 
 
 ![TSPOW Time Line](tspow-timeline.drawio.png)
 
-These current block difficulty adjustments create an economical intention for miners to get the most "old" block template to create a new block.
-In another case, the difficulty increases which (in case of hash power remains unchanged) will lead to increasing searching time for a block solution.
+These current block difficulty adjustments create an economic incentive for the miners to pick the oldest block template for their new block.
+Otherwise, the difficulty will increase, increasing the search time for a block solution, provided the hash power stays the same.
 This will either: 
 
-* balance disappearance of a miner from the pool of block creators (until the "hole" is disappeared the mining will be slower);
-* decrease miners' reward per time period in case they favor some block templates.
+* Balance out the disappearance of a miner from the pool of block creators: until the "hole" is eliminated, the mining will be slower;
+* Decrease miners' reward per time period in case they favor some block templates.
