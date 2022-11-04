@@ -1,4 +1,4 @@
-# Time Shift Proof-of-Work Beyond a Functional Spec
+# Difficulty Adjustment for Time Shift Proof-of-Work 
 
 Disclaimer: This write-up was created due to a private discussion between several people. Authorship of this idea belongs to a broader group of people than just the committers here. Original idea by Jack Liao.
 
