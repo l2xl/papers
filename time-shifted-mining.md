@@ -8,6 +8,8 @@ The well-known Proof-of-Work (PoW) blockchain consensus mechanism is vulnerable 
 While this does not mainly affect the largest blockchain projects like Bitcoin, it is not true for minor blockchain projects or just boot-strapping blockchains.
 Additional mechanisms to classical PoW should allow increasing resistance to the most well-known attacks on blockchain consensus.
 
+MS: Подверженность атаке 51% – это неотьемлемое свойство децентрализованного консенсуса, можно сказать даже его определение. Если консенсус не подвержен атаке 51% – он не децентрализован. Рассуждение о том что метод повышает сопротивление атаке 51% либо не верну, либо свидетельствует о том что благодаря методу консенсус становится централизованны
+
 ## Common
 
 In bitcoin proof of work, two operations - 1) creating a new block and 2) finding a solution to a block, are closely tied together.  The main idea of Time Shift Proof-of-Work (TSPOW) is to separate them in time.  As a result, rewriting the history of the blockchain sequence becomes even harder than in the Nakamoto consensus.
@@ -32,9 +34,11 @@ TSPOW makes many types of attacks on the Nakamoto PoW consensus more expensive.
 
 ![TSPOW](ideal-tspow.drawio.png)
 
+MS: нарисуй в терминологии T, W
+
 ### Mining Difficulty Adjustment
 
-What а miner who won a block solution will not provide a new block template at the time when expected? 
+What а miner who won a block solution will not provide a new block template at the time when expected? MS: Давай обьясним почему это плохо или уберём.
 The same effect may happen if miners favor some block templates and ignore others.
 
 TSPoW can protect itself from such imbalance if it assumes an additional rule to adjust the current block mining difficulty:
@@ -43,7 +47,7 @@ $d = D \cdot \frac {\sum S_i} {(T+N/2) \cdot N}$, where
 
 $d$ - current block difficulty.
 
-$D$ - some base block difficulty (calculated as usual[MS:Meaning?]).
+$D$ - some base block difficulty (calculated as usual [MS: ниасилил]).
 
 $T_1$ - the mining time shift. After $T_1$ blocks a miner gets his right to make a new block template.
 
@@ -51,9 +55,11 @@ $W$ - the number of blocks when a block creator can use hit right to create a ne
 
 $N$ - a "normal" size of the block creators pool. It may be equal to the size of the time-shift mining window $W$ if the mining scheme allows it. 
 
-$S_i$ - the distance in blocks between an available block template and the current blockchain height. 
+$S_i$ - the distance in blocks between an available block template and the current blockchain height. MS: а как учесть разные перспективы на чейн?
 
 ![TSPOW Time Line](tspow-timeline.drawio.png)
+
+MS: на рисунке что-то не так с направлением временной оси кажется. 
 
 These current block difficulty adjustments create an economic incentive for the miners to pick the oldest block template for their new block.
 Otherwise, the difficulty will increase, increasing the search time for a block solution, provided the hash power stays the same.
