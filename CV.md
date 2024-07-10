@@ -1,7 +1,8 @@
 <p align="right">
 <a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
 telegram: <a href="https://t.me/lexis_tikh">@lexis_tikh</a><br>
-signal: l2xl</p>
+signal: l2xl<br>
+<a href="https://l2xl.medium.com/">Medium publications</a></p>
 
 ----
 
@@ -57,9 +58,9 @@ Software Architect/Research Engineer</div>
   
 ### Responsirbilities and achievements:
 
-* Blockchain related research, white paper co-authoring
+* [L15 stable coin protocol co-authoring](https://l15.dev/L15-Stable.pdf)
 
-* L15 protocol
+* Blockchain related research
 
 * Threshold signatures math research/investigation
 
