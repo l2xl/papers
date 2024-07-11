@@ -55,7 +55,7 @@ Software Architect/C++ Developer</div>
 <h2>ArrowLabs/L15</h2>
 2020 – Jan, 2023<br>
 Software Architect/Research Engineer</div>
-  
+
 ### Responsirbilities and achievements:
 
 * [L15 stable coin protocol co-authoring](https://l15.dev/L15-Stable.pdf)
@@ -220,11 +220,7 @@ Senior Java Developer</div>
 January 2005 – December 2006<br>
 Software Engineer</div>
 
-### Responsibilities:
-
-* iDen MDG2 development
-
-Environment:
+### Environment:
 
 * pSOS
 
