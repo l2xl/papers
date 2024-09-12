@@ -1,20 +1,15 @@
 <p align="right">
 <a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
-telegram: <a href="https://t.me/lexis_tikh">@lexis_tikh</a><br>
 signal: l2xl<br>
 <a href="https://l2xl.medium.com/">Medium publications</a></p>
 
 ----
 
-> Life is changing anytime! There should be no space for time wasted in our life. If you do not need all the boring text around me, please, skip this first part and read below :)
+I believe the future of world finances will be decentralized. Like the gold standard was replaced by fiat money, the fiat money will be replaced by decentralized blockchain-based money. The revolution is coming and we are part of it. While many proofs for decentralized finances are in their places the final architecture is still unclear, and this is a great opportunity to take place in the DeFi landscape formation.
 
-It is really sad to see how exciting things happen without you. When I return back to my most interesting past tasks, I remember such “crazy” requirements like running this text-to-speech engine with 17-bit math (yes, exactly 17 bit) on this new mobile (do you remember Palm Tungsten  handhelds?..). Or, let’s create language binding between embedded Ruby server and JavaScript front end in one to any native language used in modern mobile (and not mobile as well) for our cross-platform development environment (RhoMobile). Or let’s create fast and secure plastic card payments on bitcoin evolved into L15 DeFi project research (ArrowLabs). These all so diverged in technologies and so similar in this “do nobody knows what nobody knows how”. I like this approach since it is always hard and definitely challenging from a technical point of view and so interesting for me from a human point of view. If you have something exciting, really hard to solve – I’ll be glad to dive and help.
+Having over 20 years of experience in commercial software development I’ve successfully completed a wide range of different software projects, from standalone Windows programs to real-time embedded applications (Gieseke&Devrient) and from the cross-platform mobile software development environment (RhoMobile) to high-productive network services (Motorola iDEN, EMC Centera). My current points of interest are a decentralized systems architecture, UTXO-based blockchains, and cryptography. Completing the last projects I got great expertise and fun in these areas.
 
-Currently, I have over 20 years of experience in commercial software development. I’ve successfully completed a wide range of different software projects, from standalone windows programs to real-time embedded applications and from a cross-platform mobile software development environment to high-productive network services. I am familiar with a wide range of tools and technologies. At the same time, currently my primary expertise are blockchain, an elliptic curve cryptography, and a cross-platform code design applied to C++.
-
-My experience is not enclosed just by C/C++: I spent some time with Java, Rust, Go, ARM assembler, scripting (Python, Ruby, Perl, shell, PHP), web development, databases, etc.
-
-I have strong skills in such mandatory SW engineering areas as configuration management and change management as a whole. In addition, I have solid experience in software architecture and design.
+I continue developing the l15 library which provides useful UTXO-blockchain APIs and I have recently started a new pet project (BScratcher) aimed at utilizing the l15 layer to build a universal Bitcoin (and any UTXO-based) wallet and other tools including a full node. The ambition of the project is to architect and develop a universal and easy-to-use solution to build any UTXO-based blockchain component.
 
 ----
 
