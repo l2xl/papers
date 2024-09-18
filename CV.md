@@ -15,6 +15,28 @@ I continue developing the l15 library which provides useful UTXO-blockchain APIs
 
 ----
 
+# Skills
+
+* C++, Boost, SWIG, WASM/Emscripten
+
+* Bitcoin: PoW, Bitcoin Core sources, Taproot, Bitcoin Script, Lightning Network, HTLC, PTLC...
+
+* Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures...
+
+* Autotools, Make
+
+* Java/Android (SDK, NDK), JNI
+
+* Some Rust and Go experience
+
+* Python, Ruby
+
+* Git, Automated Tests, CI/CD
+
+* Many-many more...
+
+----
+
 # Job Experience
 
 <div align="right">
