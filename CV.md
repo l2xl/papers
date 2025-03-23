@@ -7,9 +7,7 @@ signal: l2xl<br>
 
 I believe the future of world finances will be decentralized. Like the gold standard was replaced by fiat money, the fiat money will be replaced by decentralized blockchain-based money. The revolution is coming and we are part of it. While many proofs for decentralized finances are in their places the final architecture is still unclear, and this is a great opportunity to take place in the DeFi landscape formation.
 
-Having over 20 years of experience in commercial software development I’ve successfully completed a wide range of different software projects, from standalone Windows programs to real-time embedded applications (Gieseke&Devrient) and from the cross-platform mobile software development environment (RhoMobile) to high-productive network services (Motorola iDEN, EMC Centera). My current points of interest are a decentralized systems architecture, UTXO-based blockchains, and cryptography. Completing the last projects I got great expertise and fun in these areas.
-
-I continue developing the l15 library which provides useful UTXO-blockchain APIs and I have recently started a new pet project (BScratcher) aimed at utilizing the l15 layer to build a universal Bitcoin (and any UTXO-based) wallet and other tools including a full node. The ambition of the project is to architect and develop a universal and easy-to-use solution to build any UTXO-based blockchain component.
+Having over 20 years of experience in commercial software development I’ve successfully completed a wide range of different software projects, from standalone Windows programs to real-time embedded applications (Gieseke&Devrient) and from the cross-platform mobile software development environment (RhoMobile) to high-productive network services (Motorola iDEN, EMC Centera). My current points of interest are a decentralized systems architecture, UTXO-based blockchains, and cryptography. Working on the last projects with ArrowLabs team I get great expertise and fun in these areas.
 
 ----
 
@@ -21,7 +19,7 @@ I continue developing the l15 library which provides useful UTXO-blockchain APIs
 
 * Bitcoin: PoW, Bitcoin Core sources, Taproot, Bitcoin Script, Lightning Network, HTLC, PTLC...
 
-* Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures...
+* Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures, Deterministic Wallet...
 
 * Autotools, Make
 
