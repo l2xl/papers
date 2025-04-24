@@ -1,6 +1,6 @@
 <p align="right">
 <a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
-telegram: [@lexis_tikh](https://t.me/lexis_tikh)
+telegram: <a href="https://t.me/lexis_tikh">@lexis_tikh</a><br>
 signal: l2xl<br>
 <a href="https://l2xl.medium.com/">Medium publications</a></p>
 
