@@ -1,5 +1,6 @@
 <p align="right">
 <a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
+telegram: [@lexis_tikh](https://t.me/lexis_tikh)
 signal: l2xl<br>
 <a href="https://l2xl.medium.com/">Medium publications</a></p>
 
@@ -13,9 +14,19 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 ----
 
+# Actual projects
+
+* [Bitcoin wallet core library (C++/wasm)](https://github.com/UTXORD/utxord-wallet/)
+
+* [Crypto-exchange trading pet-project](https://github.com/l2xl/extools)
+
+* [Rhomobile platform (lexis-t contribution)](https://github.com/rhomobile/rhodes)
+
+----
+
 # Skills
 
-* C++, Boost, SWIG, WASM/Emscripten
+* C++, Boost, Boost/Asio, SWIG, WASM/Emscripten
 
 * Bitcoin: PoW, Bitcoin Core sources, Taproot, Bitcoin Script, Lightning Network, HTLC, PTLC...
 
@@ -27,7 +38,7 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 * Some Rust and Go experience
 
-* Python, Ruby
+* Some Python, Ruby
 
 * Git, Automated Tests, CI/CD
 
