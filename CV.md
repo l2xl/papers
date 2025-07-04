@@ -1,25 +1,34 @@
 # Alexey Tikhvinskiy
 
 **Software Architect / Lead C++ Dev / Blockchain Dev/Researcher**  
-[https://https://github.com/l2xl] | [[Ссылка на Medium](https://l2xl.medium.com/)] | [mailto:l2xl@proton.me] | [Telegram: @lexis_tikh]
+https://github.com/l2xl | [Medium Publications](https://l2xl.medium.com/) | mailto:l2xl@proton.me | Telegram: @lexis_tikh
 
 ---
 
-## 🔎 Summary
+## Summary
 
 Experienced software architect and engineer with 20+ years in commercial development. Passionate about decentralized finance, cryptographic protocols, and real-time systems. Deep expertise in C++ and blockchain internals, from low-level protocols to smart contract scripting and cryptographic primitives. Strong contributor to open source and decentralized technologies.
 
+I specialize in tackling non-trivial, exploratory, or research-heavy engineering tasks — often under conditions of uncertainty or in areas lacking standard solutions or documentation. My recent work involved designing novel blockchain protocols (L15, UTXORD), developing scalable threshold cryptography, and building wallet infrastructure for protocols that didn't yet finalized at the time of development.
+
+I seek roles where innovation, first-principles reasoning, and deep technical exploration are valued alongside engineering discipline and code quality.
+
 ---
 
-## 🚀 Key Skills
+## Key Skills
 
-**Primary Languages**: C++ (up to C++20), Java  
-**Secondary Languages**: Go, Rust, Python, Kotlin, Ruby, JavaScript/HTML, XML, ASM (Arm, x86)  
+**Problem-Solving Skills**:  
+- Solving non-standard, first-time engineering problems  
+- Translating vague or research-level requirements into production-grade systems  
+- Bridging theoretical research with practical implementation (e.g., threshold crypto, Ordinals protocol)
+
+**Primary Languages**: C++ (up to C++20), Java (Android SDK)  
+**Secondary Languages**: Go, Rust, Python, SQL, Kotlin, Ruby, JavaScript/HTML, XML, ASM (Arm, x86)  
 **Concurent Programming**: Multithreading, Lock-free, IPC, Boost/ASIO, Reactive-programming  
-** **: Cross-platform code, JNI, SWIG, WASM/Emscripten
+**Cross-platform**: Cross-platform code design, JNI, SWIG, WASM/Emscripten  
 **Networking**: gRPC, REST, BSD Sockets, WebSockets, TCP/IP, P2P, Boost/ASIO, ZeroMQ  
 **Blockchain**: Bitcoin Core, Bitcoin Script, Taproot, Lightning Network, Bitcoin Script, Ordinals/Inscriptions/Runes  
-**Crypto**: ECC, Schnorr, Threshold Signatures, HTLC/PTLC, Adapter Signatures, Deterministic Wallet  
+**Crypto**: ECC, Schnorr, Threshold Signatures, HTLC/PTLC, DLC, Adapter Signatures, Deterministic Wallet  
 **Tools**: Autotools, Make, CMake, Git, ClearCase, Jira, GDB  
 **Mobile**: Android SDK/NDK  
 **DevOps**: Docker, CI/CD (GitHub Actions, GitLab CI), Shell scripting  
@@ -28,42 +37,44 @@ Experienced software architect and engineer with 20+ years in commercial develop
 
 ---
 
-## 🧠 Expertise Areas
+## Expertise Areas
 
-- Blockchain system architecture and low-level protocol engineering  
-- Cryptographic protocol implementation (ECC, Schnorr, Threshold, HTLC/PTLC)  
+- Blockchain architecture and low-level protocol engineering  
+- Cryptographic protocol implementation (ECC, Schnorr signatures, Threshold signatures, HTLC/PTLC, DLC)  
 - High-performance backend development and multithreaded C++ systems  
 - Smart contract scripting for Bitcoin-like chains  
 - JavaCard-based secure signing systems  
 - R&D in math-heavy and decentralized computation domains  
-- Cross-platform system software and embedded development
+- Cross-platform software and embedded development
 - Real-time systems
 
 ---
 
-## 📌 Recent Projects
+## Open-Source Contribution
 
-### 🔹 [utxord-wallet](https://github.com/UTXORD/utxord-wallet)  
+### [UTXORD Wallet](https://github.com/UTXORD/utxord-wallet)  
 **C++/WASM Bitcoin Wallet Core Library**  
 - Designed and implemented a wallet core engine with support for ordinals, inscriptions, and runes  
-- Focus on low-level Bitcoin primitives and scripting  
-- Cross-compiled to WASM with SWIG bindings
+- Cross-compiled to WASM
+- SWIG bindings to Python
 
-### 🔹 [extools](https://github.com/l2xl/extools)  
-**Crypto-exchange Trading Terminal (Pet Project)**  
-- Toolkit for technical market analysis and strategy prototyping  
-- Focus on intuitive visualization and candle modeling
+### [L15 Blockchain abstraction library](https://github.com/layer1dot5/l15-core)  
+**L15 Core Library**  
+- Low-level Bitcoin primitives and scripting
+- P2P Schnorr Threshold signing (FROST) prove of concept implementation
 
-### 🔹 [RhoMobile / Rhodes](https://github.com/rhomobile/rhodes)  
+
+### [Rhodes Framework](https://github.com/rhomobile/rhodes)  
 **Cross-platform mobile framework contribution**  
-- Led core architecture layer refactoring  
-- Implemented cross-language bindings and abstractions (Ruby ↔ C++ ↔ Java)
+- Led Android implementation
+- Participated in core architecture layer refactoring  
+- Implemented cross-language bindings and abstraction layer (Ruby/JavaScript API ↔ C++/Java Backend)
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
-### **ArrowLabs / UTXORD** — *Software Architect, C++ Developer*  
+### **ArrowLabs / UTXORD** — *Software Architect, Lead C++ Developer*  
 📍 Jan 2023 – present  
 - Blockchain R&D: ordinals, inscriptions, runes  
 - Developed Bitcoin wallet library with C++ and WebAssembly  
@@ -96,7 +107,7 @@ Experienced software architect and engineer with 20+ years in commercial develop
 
 ---
 
-### **Motorola Solutions / Rhomobile / Zebra** — *Lead Android Developer*  
+### **Motorola Solutions / Rhomobile / Zebra** — *Senior Android Developer*  
 📍 2011 – 2015  
 - Core team member in Rhomobile framework  
 - Developed Android abstraction and hybrid WebView UI layers  
@@ -111,29 +122,31 @@ Experienced software architect and engineer with 20+ years in commercial develop
 - C++ developer for high-speed banknote processing machines  
 - Global software architecture and process implementation group participation
 
-**Stack**: C++, VxWorks, ClearCase, CMMI
+**Stack**: C++, VxWorks, ClearCase, ClearQuest, CMMI
 
 ---
 
-## 📚 Education
+## Education
 
 **ITMO University**, St. Petersburg  
 Engineer’s Degree – *Professional Pedagogics in IT*  
-📅 1997 – 2003
+1997 – 2003
 
 **Gymnasium #344**, St. Petersburg – *Physics & Math Specialization*  
-📅 1995 – 1997
+1995 – 1997
 
 ---
 
-## 🧩 Publications & Open Source
+## Publications & Open Source
 
-- ✍️ [Medium publications](https://l2xl.medium.com/) — technical deep-dives into blockchain and crypto protocols  
-- 🧪 Contributor to open source projects: [Rhodes](https://github.com/rhomobile/rhodes), [utxord-wallet](https://github.com/UTXORD/utxord-wallet)
+- [Medium publications](https://l2xl.medium.com/) — technical deep-dives into blockchain and crypto protocols  
+- [UTXORD Wallet](https://github.com/UTXORD/utxord-wallet) — Bitcoin wallet core API targeted for Inscriptions and Runes
+- [Exchange Scratcher](https://github.com/l2xl/extools) — Crypto-exchange trading pet-project  
+- [Rhodes Framework](https://github.com/rhomobile/rhodes) — Platform for building locally executing, device-optimized mobile applications for all major smartphone devices
 
 ---
 
-## 🌍 Languages
+## Languages
 
 - English — professional working proficiency  
 - Russian — native
