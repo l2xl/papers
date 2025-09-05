@@ -1,303 +1,154 @@
-<p align="right">
-<a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
-telegram: <a href="https://t.me/lexis_tikh">@lexis_tikh</a><br>
-signal: l2xl<br>
-<a href="https://l2xl.medium.com/">Medium publications</a></p>
+# Alexey Tikhvinskiy
 
-----
+**Software Architect / Lead C++ Dev / Blockchain Dev/Researcher**  
+https://github.com/l2xl | [Medium Publications](https://l2xl.medium.com/) | mailto:l2xl@proton.me | Telegram: @lexis_tikh
 
-I believe the future of world finances will be decentralized. Like the gold standard was replaced by fiat money, the fiat money will be replaced by decentralized blockchain-based money. The revolution is coming and we are part of it. While many proofs for decentralized finances are in their places the final architecture is still unclear, and this is a great opportunity to take place in the DeFi landscape formation.
+---
 
-Having over 20 years of experience in commercial software development I’ve successfully completed a wide range of different software projects, from standalone Windows programs to real-time embedded applications (Gieseke&Devrient) and from the cross-platform mobile software development environment (RhoMobile) to high-productive network services (Motorola iDEN, EMC Centera). My current points of interest are a decentralized systems architecture, UTXO-based blockchains, and cryptography. Working on the last projects with ArrowLabs team I get great expertise and fun in these areas.
+## Summary
 
-----
+Experienced software architect and engineer with 20+ years in commercial development. Passionate about decentralized finance, cryptographic protocols, and real-time systems. Deep expertise in C++ and blockchain internals, from low-level protocols to smart contract scripting and cryptographic primitives. Strong contributor to open source and decentralized technologies.
 
-----
+I specialize in tackling non-trivial, exploratory, or research-heavy engineering tasks — often under conditions of uncertainty or in areas lacking standard solutions or documentation. My recent work involved designing novel blockchain protocols (L15, UTXORD), developing scalable threshold cryptography, and building wallet infrastructure for protocols that didn't yet finalized at the time of development.
 
-# Actual projects
+I seek roles where innovation, first-principles reasoning, and deep technical exploration are valued alongside engineering discipline and code quality.
 
-* [Bitcoin wallet core library (C++/wasm)](https://github.com/UTXORD/utxord-wallet/)
+---
 
-* [Crypto-exchange trading pet-project](https://github.com/l2xl/extools)
+## Key Skills
 
-* [Rhomobile platform (lexis-t contribution)](https://github.com/rhomobile/rhodes)
+**Problem-Solving Skills**:  
+- Solving non-standard, first-time engineering problems  
+- Translating vague or research-level requirements into production-grade systems  
+- Bridging theoretical research with practical implementation (e.g., threshold crypto, Ordinals protocol)
 
-----
+**Primary Languages**: C++ (up to C++20), Java (Android SDK)  
+**Secondary Languages**: Go, Rust, Python, SQL, Kotlin, Ruby, JavaScript/HTML, XML, ASM (Arm, x86)  
+**Concurent Programming**: Multithreading, Lock-free, IPC, Boost/ASIO, Reactive-programming  
+**Cross-platform**: Cross-platform code design, JNI, SWIG, WASM/Emscripten  
+**Networking**: gRPC, REST, BSD Sockets, WebSockets, TCP/IP, P2P, Boost/ASIO, ZeroMQ  
+**Blockchain**: Bitcoin Core, Bitcoin Script, Taproot, Lightning Network, Bitcoin Script, Ordinals/Inscriptions/Runes  
+**Crypto**: ECC, Schnorr, Threshold Signatures, HTLC/PTLC, DLC, Adapter Signatures, Deterministic Wallet  
+**Tools**: Autotools, Make, CMake, Git, ClearCase, Jira, GDB  
+**Mobile**: Android SDK/NDK  
+**DevOps**: Docker, CI/CD (GitHub Actions, GitLab CI), Shell scripting  
+**Metodologies**: TDD, Scrum  
+**Other**: JavaCard, EMV, NFC  
 
-# Skills
+---
 
-* C++, Boost, Boost/Asio, SWIG, WASM/Emscripten
+## Expertise Areas
 
-* Bitcoin: PoW, Bitcoin Core sources, Taproot, Bitcoin Script, Lightning Network, HTLC, PTLC...
+- Blockchain architecture and low-level protocol engineering  
+- Cryptographic protocol implementation (ECC, Schnorr signatures, Threshold signatures, HTLC/PTLC, DLC)  
+- High-performance backend development and multithreaded C++ systems  
+- Smart contract scripting for Bitcoin-like chains  
+- JavaCard-based secure signing systems  
+- R&D in math-heavy and decentralized computation domains  
+- Cross-platform software and embedded development
+- Real-time systems
 
-* Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures, Deterministic Wallet...
+---
 
-* Autotools, Make
+## Open-Source Contribution
 
-* Java/Android (SDK, NDK), JNI
+### [UTXORD Wallet](https://github.com/UTXORD/utxord-wallet)  
+**C++/WASM Bitcoin Wallet Core Library**  
+- Designed and implemented a wallet core engine with support for ordinals, inscriptions, and runes  
+- Cross-compiled to WASM
+- SWIG bindings to Python
 
-* Some Rust and Go experience
+### [L15 Blockchain abstraction library](https://github.com/layer1dot5/l15-core)  
+**L15 Core Library**  
+- Low-level Bitcoin primitives and scripting
+- P2P Schnorr Threshold signing (FROST) prove of concept implementation
 
-* Some Python, Ruby
 
-* Git, Automated Tests, CI/CD
+### [Rhodes Framework](https://github.com/rhomobile/rhodes)  
+**Cross-platform mobile framework contribution**  
+- Led Android implementation
+- Participated in core architecture layer refactoring  
+- Implemented cross-language bindings and abstraction layer (Ruby/JavaScript API ↔ C++/Java Backend)
 
-* Many-many more...
+---
 
-----
+## Professional Experience
 
-# Job Experience
+### **ArrowLabs / UTXORD** — *Software Architect, Lead C++ Developer*  
+📍 Jan 2023 – present  
+- Blockchain R&D: ordinals, inscriptions, runes  
+- Developed Bitcoin wallet library with C++ and WebAssembly  
+- Smart contract scripting and scripting analysis  
+- Cryptographic protocol implementation and optimization
 
-<div align="right">
-<h2>ArrowLabs/UTXORD</h2>
-Jan, 2023 – present time<br>
-Software Architect/C++ Developer</div>
+**Stack**: C++20, Bitcoin Core, Bitcoin Script, Taproot, WASM, SWIG, Autotools, GitHub, multi-threading
 
-### Responsibilities and achievements:
+---
 
-* Blockchain related research (ordinals/inscriptions/runes protocol)
+### **ArrowLabs / L15** — *Software Architect, Research Engineer*  
+📍 2020 – Jan 2023  
+- Co-authored stablecoin protocol (L15)  
+- R&D: threshold signatures, Schnorr-based multi-party protocols  
+- Built large-scale PoC with thousands of signing participants  
+- Developed JavaCard signing applets and Lightning Network integration
+- Developed Bitcoin tooling library with C++
 
-* [Bitcoin wallet core library (C++/wasm)](https://github.com/UTXORD/utxord-wallet/)
+**Stack**: C++, Bitcoin Core, Bitcoin Script, Schnorr, Taproot, Threshold Signatures, FROST, Go, LND/gRPC, Git, GitLab CI/CD
 
-* Bitcoin contract development
+---
 
-### Environment:
+### **ArrowPass** — *Lead Software Developer / Software Architect*  
+📍 2014 – 2019  
+- Designed NFC/EMV-based closed-loop payment system  
+- Developed secure JavaCard-based cryptographic modules  
+- Developed Android POS with wireless NFC/RF cards  
 
-* C++ (up to c++20)
+**Stack**: Android SDK, JavaCard, EMV, Mifare, NFC
 
-* WASM (Emscripten), SWIG
+---
 
-* Bitcoin, ordinals/inscriptions/runes protocol
+### **Motorola Solutions / Rhomobile / Zebra** — *Senior Android Developer*  
+📍 2011 – 2015  
+- Core team member in Rhomobile framework  
+- Developed Android abstraction and hybrid WebView UI layers  
+- Bridged Ruby and Java/C++ runtime environments
 
-* Multi-threading
+**Stack**: C/C++, Java, Android SDK/NDK, JNI, Ruby, Rake, Git, ClearCase
 
-* Git/GitHub/GitLab
+---
 
-* autotools
+### **Giesecke & Devrient GmbH** — *Senior Software Engineer*  
+📍 2007 – 2010  
+- C++ developer for high-speed banknote processing machines  
+- Global software architecture and process implementation group participation
 
-----
+**Stack**: C++, VxWorks, ClearCase, ClearQuest, CMMI
 
-<div align="right">
-<h2>ArrowLabs/L15</h2>
-2020 – Jan, 2023<br>
-Software Architect/Research Engineer</div>
+---
 
-### Responsirbilities and achievements:
+## Education
 
-* [L15 stable coin protocol co-authoring](https://l15.dev/L15-Stable.pdf)
+**ITMO University**, St. Petersburg  
+Engineer’s Degree – *Professional Pedagogics in IT*  
+1997 – 2003
 
-* Blockchain related research
+**Gymnasium #344**, St. Petersburg – *Physics & Math Specialization*  
+1995 – 1997
 
-* Threshold signatures math research/investigation
+---
 
-* Discrete log contract math research/investigation
+## Publications & Open Source
 
-* ECC Schnorr signatures math research/investigation
+- [Medium publications](https://l2xl.medium.com/) — technical deep-dives into blockchain and crypto protocols  
+- [UTXORD Wallet](https://github.com/UTXORD/utxord-wallet) — Bitcoin wallet core API targeted for Inscriptions and Runes
+- [Exchange Scratcher](https://github.com/l2xl/extools) — Crypto-exchange trading pet-project  
+- [Rhodes Framework](https://github.com/rhomobile/rhodes) — Platform for building locally executing, device-optimized mobile applications for all major smartphone devices
 
-* Blockchain software development
+---
 
-* [C++ library to work with bitcoin primitives](https://github.com/layer1dot5/l15-core)
+## Languages
 
-* Proof of concept implementation for threshold Schnorr signatures (thousands of signing participants) 
+- English — professional working proficiency  
+- Russian — native
 
-* Bitcoin contract development
-
-* JavaCard applet for transaction signing (Specification and development)
-
-* Bitcoin Lightning Network payments processing
-
-### Environment:
-
-* C++ (up to c++20)
-
-* Bitcoin, Lightning Network
-
-* LND GRPC
-
-* Networking, Multithreading
-
-* JavaCard
-
-* Go, GRPC
-
-* Git/GitHub/GitLab
-
-* autotools
-
-----
-
-<div align="right">
-<h2>ArrowPass</h2>
-August 2014 – 2019<br>
-Lead Software Developer/Software Architect</div>
-
-### Responsibilities and achievements:
-
-* Wireless payments solution (RF (NFC) card and Android POS terminal)
-
-* JavaCard applet for transaction signing (Specification and development)
-
-* Close-loop payment processing
-
-* E-ticket processing
-
-### Environment:
-
-* Android SDK, NFC, Networking, Multithreading
-
-* JavaCard, Mifare Desfire, Mifare Ultralight
-
-* EMV, MasterCard PayPass
-
-* Git/GitHub, Jira
-
-----
-
-<div align="right">
-<h2>Rhomobile/Motorola Solutions/Zebra Technologies</h2>
-April 2011 – January 2015<br>
-Lead Android Developer</div>
-
-### Responsibilities and achievements:
-
-* [Rhomobile](https://github.com/rhomobile/rhodes) architecture team participation
-
-* [Rhomobile](https://github.com/rhomobile/rhodes) cross-platform core development (look for lexis-t contribution)
-
-* Android abstraction, core and web UI layers development
-
-* Ruby/JavaScript -> C++/Java calls marshalling implementation
-
-### Environment:
-
-* C/C++
-
-* Android SDK/NDK, JNI
-
-* WebView
-
-* Ruby, Rake
-
-* Git/GitHub
-
-* ClearCase
-
-* and many more...
-
-----
-
-<div align="right">
-<h2>Tbricks</h2>
-April 2010 – March 2011<br>
-Senior Developer (C++)</div>
-
-### Responsibilities and achievements:
-
-* Market data abstraction units support and implementation
-
-### Environment:
-
-* C++
-
-* SVN
-
-----
-
-<div align="right">
-<h2>Giesecke & Devrient GmbH</h2>
-August 2007 – April 2010<br>
-Senior Software Developer</div>
-
-### Responsibilities and achievements:
-
-* Mainstream software development for BPS200 banknote processing machines
-
-* Participating in global software architecture and process implementation group
-
-### Environment:
-
-* C/C++
-
-* WxWorks
-
-* ClearCase/ClearQuest
-
-* CMMI
-
-----
-
-<div align="right">
-<h2>EMC/Centera</h2>
-December 2006 – June 2007<br>
-Senior Java Developer</div>
-
-### Environment:
-
-* Java SE
-
-* ClearCase
-
-* Scrum, TDD
-
-----
-
-<div align="right">
-<h2>Motorola/iDEN MDG2</h2>
-January 2005 – December 2006<br>
-Software Engineer</div>
-
-### Environment:
-
-* pSOS
-
-* C
-
-* ClearCase
-
-----
-
-<div align="right">
-<h2>Ectaco</h2>
-April 2003 – December 2004<br>
-Palm OS Lead Developer</div>
-
-### Responsibilities and achievements:
-
-* Linguistic software development for Palm OS
-
-* Porting to Palm OS, porting to new OS and handheld versions
-
-* Algorithms optimization (at low level as well)
-
-* Multi platform libraries development and support (Palm OS, Win CE, Simbian, Win32)
-
-* Supplying and packaging scripts development
-
-### Environment:
-
-* Palm OS, C/C++, ARM assembler
-
-* MS SourceSafe
-
-----
-
-----
-
-# Education
-
-## ITMO UNIVERSITY
-
-Engineer’s degree, Professional Pedagogics in IT
-
-St. Petersburg
-
-1997 - 2003
-
-
-## Gymnasium (high school) #344 with Physical and Mathematical studies
-
-St. Petersburg
-
-1995 - 1997
-
-----
+---
