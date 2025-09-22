@@ -14,13 +14,11 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 ----
 
-# Actual projects
+# Soft Skills
 
-* [Bitcoin wallet core library (C++/wasm)](https://github.com/UTXORD/utxord-wallet/)
+* Problem Solving and Clear Thinking
 
-* [Crypto-exchange trading pet-project](https://github.com/l2xl/extools)
-
-* [Rhomobile platform (lexis-t contribution)](https://github.com/rhomobile/rhodes)
+* Strong Team Player
 
 ----
 
@@ -32,7 +30,7 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 * Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures, Deterministic Wallet...
 
-* Autotools, Make
+* Autotools, Make, CMake
 
 * Java/Android (SDK, NDK), JNI
 
@@ -49,8 +47,32 @@ Having over 20 years of experience in commercial software development I’ve suc
 # Job Experience
 
 <div align="right">
+<h2>Software Development and Consulting</h2>
+Present time</div>
+
+### Projects:
+
+* [Billfold POS](https://www.billfold.tech)
+
+* [Nerox Web3 wallet](https://nerox.com/)
+
+* [Scratcher project](https://github.com/l2xl/extools)
+
+### Environment:
+
+* C++ (up to c++20)
+
+* Android SDK/NDK
+
+* Web3
+
+* Git/GitHub/GitLab
+
+----
+
+<div align="right">
 <h2>ArrowLabs/UTXORD</h2>
-Jan, 2023 – present time<br>
+Jan, 2023 – Feb, 2025<br>
 Software Architect/C++ Developer</div>
 
 ### Responsibilities and achievements:
