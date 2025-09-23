@@ -1,7 +1,6 @@
 <p align="right">
 <a href="mailto:l2xl@proton.me">l2xl@proton.me</a><br>
 telegram: <a href="https://t.me/lexis_tikh">@lexis_tikh</a><br>
-signal: l2xl<br>
 <a href="https://l2xl.medium.com/">Medium publications</a></p>
 
 ----
@@ -24,15 +23,21 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 # Skills
 
-* C++, Boost, Boost/Asio, SWIG, WASM/Emscripten
+* C++, Boost, Boost.Asio
+
+* Multithreading/Lock-free
+
+* Network
+
+* SWIG, WASM/Emscripten
+
+* Java/Android (SDK, NDK), JNI
 
 * Bitcoin: PoW, Bitcoin Core sources, Taproot, Bitcoin Script, Lightning Network, HTLC, PTLC...
 
 * Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures, Deterministic Wallet...
 
 * Autotools, Make, CMake
-
-* Java/Android (SDK, NDK), JNI
 
 * Some Rust and Go experience
 
