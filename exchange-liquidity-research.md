@@ -4,7 +4,7 @@
 > **Instrument:** BTCUSDT (spot and perp/USDⓈ-M)
 > **Exchanges:** Binance, Bybit, OKX
 > **Source:** proprietary measurements via public exchange REST APIs (klines, aggTrades, recent-trade, 24h-tickers)
-> **Purpose:** calibration of unit economics (`fee-share-model.md` §10–11) — where volume and trades concentrate, and the ceiling on executable volume per trader.
+> **Purpose:** calibration of unit economics for Open Trader project — where volume and trades concentrate, and the ceiling on executable volume per trader.
 > **Authors:** Anna T, co-authored with l2xl
 
 ## 0. Key findings
@@ -25,7 +25,7 @@
 | Average trade size (snapshot) | `recent-trade` / `trades` | limit: Binance 1000, OKX 500, Bybit spot **60** |
 | Full 24h turnover (all pairs) | `ticker/24hr` / `tickers` | USD-stable pairs only |
 
-**Caveats:** histograms are a single window on a single exchange (Binance), not time-averaged; the average trade size for Bybit/OKX is a snapshot, not a monthly average (only Binance's candles give the exact trade count). Data was collected locally (egress to exchanges from the work environment is blocked, 403).
+**Caveats:** histograms are a single window on a single exchange (Binance), not time-averaged; the average trade size for Bybit/OKX is a snapshot, not a monthly average (only Binance's candles give the exact trade count). Data was collected locally.
 
 ## 2. Turnover by exchange — BTCUSDT spot (30 full days)
 
@@ -93,8 +93,6 @@ A $30k order is 0.34% / 0.55% / 0.71% of the 10-min window — invisible. **Mone
 | **Total (8 exchanges)** | **$14.63B** | **$110.70B** | **7.6×** | **11.7%** |
 
 **Market-wide average (8 exchanges, turnover-weighted): spot : derivatives ≈ 12 : 88, perp ≈ 7.6× spot.** Derivatives dominate. A simple equal-weighted average gives 29% spot — but this is **distorted** by small spot-skewed exchanges (Bitfinex $0.1B, Crypto.com) that barely register in dollar terms; for a "market-wide average" use the weighted aggregate (12% spot).
-
-Consistent with the `fee-share-model.md` §4 model (perp mix ~88% there) — now confirmed across 8 exchanges.
 
 **Excluded from the aggregate: Bitget and HTX** — measurement artifacts via ccxt (Bitget spot inflated by the `base×last` fallback; HTX linear-swap undercounted). Both are perp-skewed by profile → correcting them properly would shift the aggregate toward **more** perp, i.e. 88% is a lower-bound estimate.
 
