@@ -19,11 +19,15 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 * Strong Team Player
 
+* SCRUM
+
 ----
 
 # Skills
 
-* C++, Boost, Boost.Asio
+* AI-assisted development
+
+* C++, Boost, Boost.Asio, ThorVG
 
 * Multithreading/Lock-free
 
@@ -38,6 +42,8 @@ Having over 20 years of experience in commercial software development I’ve suc
 * Crypto: ECC, Schnorr Signatures, Threshold Signatures, Adapter Signatures, Deterministic Wallet...
 
 * Autotools, Make, CMake
+
+* CI/CD, Auto-tests, TDD
 
 * Some Rust and Go experience
 
@@ -61,11 +67,15 @@ Present time</div>
 
 * [Nerox Web3 wallet](https://nerox.com/)
 
-* [Scratcher project](https://github.com/l2xl/extools)
+* [Open Trader](https://github.com/l2xl/open-trader)
+
+  * [DataHub](https://github.com/l2xl/open-trader/tree/main/src/datahub) - reactive data processing pipe
+ 
+  * Requirements Gate - requirements processing system for Open Trader
 
 ### Environment:
 
-* C++ (up to c++20)
+* C++ (up to c++23)
 
 * Android SDK/NDK
 
