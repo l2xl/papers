@@ -31,7 +31,7 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 * Multithreading/Lock-free
 
-* Network
+* Networking
 
 * SWIG, WASM/Emscripten
 
@@ -49,7 +49,7 @@ Having over 20 years of experience in commercial software development I’ve suc
 
 * Some Python, Ruby
 
-* Git, Automated Tests, CI/CD
+* Git, GitHub workflow
 
 * Many-many more...
 
